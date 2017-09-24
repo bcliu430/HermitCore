@@ -44,6 +44,7 @@ the HermitCore kernel and applications you need:
  * Netwide Assember (NASM)
  * recent host compiler such as GCC
  * HermitCore cross-toolchain, i.e. Binutils, GCC, newlib, pthreads
+ * Rust toolchain (see [rust-lang.org](https://www.rust-lang.org/en-US/install.html))
 
 ### HermitCore cross-toolchain
 
@@ -170,6 +171,8 @@ Afterwards, the proxy start the HermitCore applications within a VM ore bare-met
 $ # using QEMU
 $ HERMIT_ISLE=qemu /opt/hermit/bin/proxy /opt/hermit/x86_64-hermit/extra/tests/hello
 ```
+**Note:** Currently, we are developing a proxy in Rust to increase productivity. 
+However, this version with the name *proxy_rs* isn't stable. Please don't use it.
 
 ## Testing
 
