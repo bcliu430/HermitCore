@@ -1,7 +1,8 @@
 [package]
 name = "proxy_rs"
 version = "0.0.1"
-authors = ["bytesnake <bytesnake@mailbox.org>"]
+authors = ["bytesnake <bytesnake@mailbox.org>",
+	   "stlankes <slankes@eonerc.rwth-aachen.de>"]
 license = "BSD3"
 
 [dependencies]
