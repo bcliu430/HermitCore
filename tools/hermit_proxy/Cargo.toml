@@ -1,0 +1,20 @@
+[package]
+name = "hermit_proxy"
+version = "0.0.1"
+authors = ["bytesnake <bytesnake@mailbox.org>"]
+license = "BSD3"
+
+[dependencies]
+libc = "0.2.21"
+nix = "0.8.0"
+memmap = "0.5.2"
+elf = "0.0.10"
+errno = "0.2.3"
+inotify = "0.4"
+byteorder = "1"
+log = "0.3"
+clap = "2.24.2"
+serde = "1.*.*"
+chrono = { version = "0.4", features = ["serde"] }
+bincode = "0.8"
+serde_derive = "1.*.*"
