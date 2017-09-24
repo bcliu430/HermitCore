@@ -7,10 +7,10 @@ list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
 include(ExternalProject)
 
-find_package(rustc)
-find_package(rustdoc)
-find_package(cargo)
-include(Rust)
+#find_package(rustc)
+#find_package(rustdoc)
+#find_package(cargo)
+#include(Rust)
 
 #cargo_dependency(cargo
 #    PACKAGE_NAMES memmap libc nix elf errno inotify byteorder log env_logger
