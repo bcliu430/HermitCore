@@ -5,6 +5,10 @@ language: c
 git:
   submodules: true
 
+env:
+  global:
+    - PATH=$PATH:~/.cargo/bin
+
 matrix:
   include:
     - compiler:     gcc
@@ -87,6 +91,7 @@ before_install:
   - if [ -n "$CLANGV" ]; then tar xf $HOME/clang+llvm.tar.xz -C $HOME/clang+llvm --strip-components 1; fi
 
 script:
+  - curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain stable
   - source cmake/local-cmake.sh
   - mkdir build
   - cd build
