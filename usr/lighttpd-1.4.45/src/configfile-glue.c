@@ -237,7 +237,7 @@ static int config_addrstr_eq_remote_ip_mask(server *srv, const char *addrstr, in
 #ifdef HAVE_INET_PTON
 	if (1 == inet_pton(AF_INET, addrstr, &val.ipv4.sin_addr))
 #else
-	if (INADDR_NONE != (val.ipv4.sin_addr = inet_addr(addrstr)))
+	if (INADDR_NONE != (val.ipv4.sin_addr.s_addr = inet_addr(addrstr)))
 #endif
 	{
 		/* build netmask */

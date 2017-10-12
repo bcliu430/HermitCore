@@ -417,7 +417,7 @@ static void log_write(server *srv, buffer *b) {
 		write_all(srv->errorlog_fd, CONST_BUF_LEN(b));
 		break;
 	case ERRORLOG_SYSLOG:
-		syslog(LOG_ERR, "%s", b->ptr);
+		syslog("%s", b->ptr);
 		break;
 	}
 }
